@@ -22,7 +22,7 @@ app.add_middleware(
 )
 
 # Mongo 
-URL = "mongodb://127.0.0.1:27017"
+URL = "mongodb://nishusgowda882_db_user:<db_password>@ac-qrbm5cr-shard-00-00.gxsmjyn.mongodb.net:27017,ac-qrbm5cr-shard-00-01.gxsmjyn.mongodb.net:27017,ac-qrbm5cr-shard-00-02.gxsmjyn.mongodb.net:27017/?ssl=true&replicaSet=atlas-zv29iz-shard-0&authSource=admin&appName=Cluster0"
 client = MongoClient(URL)
 db = client["richest_tickets_db"]
 ticket_collection = db["tickets"]
